@@ -19,11 +19,11 @@
     margin: 1rem 1rem 0 1rem;
 }
 .user{
-    width: fit-content;
     margin-left: 15rem;
     margin-top: 1rem;
-    padding: 0 1.5rem;
     font-size: 150%;
+    padding: 0.5rem;
+    text-align: center;
 }
 .tabs{
     display: grid;
@@ -85,4 +85,62 @@
 }
 .refund{
     color: burlywood;
+}
+.drop{
+    width: 20%;
+    font-size: 150%;
+    margin-left: 15rem;
+    display: none;
+}
+
+@media (width<=346px){
+    .hero_img{
+        margin-top: 8rem;
+    }
+}
+@media (width<=696px){
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .right{
+        margin-top: -6rem;
+        height: 30vh;
+    }
+    .hero_img{
+        height: 15rem;
+    }
+    .left{
+        margin-top: -6rem;
+    }
+}
+@media(width<=800px){
+    .tabs,.user{
+        display: none;
+    }
+    .links{
+        grid-template-columns: 1fr 1fr;
+    }
+    .drop{
+        display: block;
+    }
+}
+@media(width<=928px){
+    .tabs{
+        left: 5%;
+    }
+}
+@media (width<=1060px){
+    .contact{
+        width: 120%;
+    }
+}
+@media (width<=1450px){
+    .tabs{
+        width: 150%;
+        position: relative;
+        right: 40%;
+    }
+    .user{
+        width: 40%;
+    }
 }
