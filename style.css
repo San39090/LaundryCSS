@@ -1,146 +1,126 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.logo_img{
-    width: 35px;
-    height: 40px;
+.btn{
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    border: none;
+    font-size: 120%;
     position: relative;
-    left: 20%;
+    bottom: 60%;
+    background-color: rgb(63, 63, 100);
+    color: white;
 }
-.logo_img:hover{
+.btn:hover{
+    opacity: 0.8;
     cursor: pointer;
 }
-.links{
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr;
-    column-gap: 3rem;
-    margin: 1rem 1rem 0 1rem;
-}
-.user{
-    margin-left: 15rem;
-    margin-top: 1rem;
-    font-size: 150%;
-    padding: 0.5rem;
-    text-align: center;
-}
-.tabs{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    margin-top: 1rem;
-    height: fit-content;
-    text-align: center;
-    font-size: 150%;
-    color: rgba(50,0,50);
-}
-.home:hover,.about:hover,.services:hover,.contact:hover,.user:hover{
-    background-color: pink;
-    border-radius: 3px;
-    cursor: pointer;
-    padding-top: 0 0.5rem;
+.drop{
+    display: none;
 }
 .hero{
+    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.left,.right{
-    height: 70vh;
+.hero_img{
+    width: 50%;
+    border-radius: 10px;
 }
 .left{
-    position: relative;
-    top: 30%;
+    height: 90vh;
+    display: grid;
     text-align: center;
-    line-height: 40px;
+    place-items: center;
 }
-.right{
-    position: relative;
-    top: 18%;
+.links{
+    height: 10vh;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+}
+.logo{
     text-align: center;
+    padding-right: 2rem;
 }
-.hero_img{
-    width: 80%;
-    height: 80%;
+.logo_img{
+    width: 15%;
 }
-.btn{
-    padding: 1rem 5rem;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.5rem;
-    background-color: rgba(100,155,255);
-    border: none;
-}
-.btn:hover{
-    background-color: rgba(155,155,255);
-    cursor: pointer;
+nav{
+    height:10vh;
 }
 .quote1{
-    color: rgba(100,125,155);
+    position: relative;
+    top: 50%;
+    font-size: 200%;
 }
 .quote2{
-    color: rgba(150,125,155);
-}
-.quote1,.quote2{
     font-size: 200%;
 }
 .refund{
-    color: burlywood;
+    position: relative;
+    bottom: 50%;
+    font-size: 120%;
 }
-.drop{
-    width: 20%;
+.right{
+    display: grid;
+    place-items: center;
+}
+.tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+}
+.home:hover,.services:hover,.about:hover,.contact:hover{
+    background-color: rgb(120, 120, 169);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0.2rem 0;
+}
+.user{
     font-size: 150%;
-    margin-left: 15rem;
-    display: none;
+}
+.user:hover{
+    background-color: rgb(99, 99, 198);
+    border-radius: 3px;
+    padding: 0.2rem 2rem;
+    cursor: pointer;
 }
 
-@media (width<=346px){
-    .hero_img{
-        margin-top: 8rem;
-    }
-}
-@media (width<=696px){
-    .hero{
-        grid-template-columns: 1fr;
-    }
-    .right{
-        margin-top: -6rem;
-        height: 30vh;
-    }
-    .hero_img{
-        height: 15rem;
-    }
-    .left{
-        margin-top: -6rem;
-    }
-}
-@media(width<=800px){
-    .tabs,.user{
-        display: none;
-    }
+
+@media (width<=720px){
     .links{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .tabs{
+        font-size: 100%;
+    }
+    .user{
+        font-size: 110%;
+    }
+}
+@media(width<=500px){
+    .bx-menu-wide{
+        font-size: 110%;
+        background-color: white;
+        border: none;
     }
     .drop{
         display: block;
     }
-}
-@media(width<=928px){
-    .tabs{
-        left: 5%;
+    .links{
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
     }
-}
-@media (width<=1060px){
-    .contact{
-        width: 120%;
+    .tabs,.user{
+        display: none;
     }
-}
-@media (width<=1450px){
-    .tabs{
-        width: 150%;
-        position: relative;
-        right: 40%;
-    }
-    .user{
-        width: 40%;
+    .hero{
+        grid-template-columns: 1fr;
     }
 }
